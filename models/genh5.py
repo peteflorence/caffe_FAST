@@ -20,7 +20,7 @@ Y = scipy.misc.imread('00177_graybel.png')
 
 with h5py.File(h5_fn, 'w') as f:
    f['data'] = X
-   f['label1'] = Y
+   f['label'] = Y
 
 text_fn = os.path.join(DIR, dataset_name+'.txt')
 with open(text_fn, 'w') as f:
